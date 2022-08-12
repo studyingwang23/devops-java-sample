@@ -58,7 +58,6 @@ pipeline {
                 }
            }
         }
-
         stage('push with tag'){
           when{
             expression{
@@ -78,7 +77,6 @@ pipeline {
                 sh 'docker push  $REGISTRY/$DOCKERHUB_NAMESPACE/$APP_NAME:$TAG_NAME '
           }
           }
-        }
         }
     }
 }
