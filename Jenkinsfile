@@ -49,7 +49,7 @@ pipeline {
 
         stage('push latest'){
            when{
-             branch 'master'
+             branch 'devops-mutibranchs-2'
            }
            steps{
                 container ('maven') {
